@@ -1,0 +1,50 @@
+@import "src/assets/styles/theme";
+
+$header-heigh: 120px;
+$header-logo-size: 80px;
+
+mat-toolbar {
+  height: $header-heigh;
+}
+
+mat-toolbar-row {
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      background: white;
+      border-radius: 50%;
+
+      a {
+        height: $header-logo-size;
+        width: $header-logo-size;
+        background: url("/assets/images/kudo-international-federation-logo.svg") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    .text {
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+
+      &:active,
+      &:hover {
+        color: $color-black;
+      }
+    }
+
+  }
+
+}
